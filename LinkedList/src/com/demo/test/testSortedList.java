@@ -14,7 +14,7 @@ public class testSortedList {
 	sl.displayList();
 	System.out.println(".............");	
 //	sl.deleteByValue(7);
-	 sl.deleteByValue(8);
+	 sl.deleteByValue(8); 
 	sl.displayList();
 	}
 

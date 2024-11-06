@@ -47,64 +47,34 @@ public class EmployeeList {
 	}
 	
     public void deleteById(int id) {
-//    	Node temp1=head;
-//    	while(temp1.next!=null) {
-//    	Node temp=head;
-//    	if(head.data.getEmpid()==id) {
-//    		head=temp.next;
-//    		temp.next=null;
-//    		temp=null;
-//    	}
-//    	else {
-//    		Node prev=null;
-//    		while(temp!=null && temp.data.getEmpid()!=id) {
-//    			prev=temp;
-//    			temp=temp.next;
-//    			}
-//    		if(temp!=null && temp.data.getEmpid()==id) {
-//    			prev.next=temp.next;
-//    			temp.next=null;
-//    			temp=null;
-//    		}
-//    		else {
-//    			System.out.println("Id Not found");
-//    		}
-//    	}
-//    	temp1=temp1.next;
-//    	
-//    }
-    	  Node temp1 = head;
-
-    	    // First, remove all nodes with the given ID at the start of the list
-    	    while (head != null && head.data.getEmpid() == id) {
-    	        Node temp = head;   // Temporary reference to the current head node
-    	        head = head.next;    // Move head to the next node
-    	        temp.next = null;    // Disconnect the node from the list
-    	        temp = null;         // Allow garbage collection to clear the node
-    	    }
-
-    	    // Initialize previous node reference as null
-    	    Node prev = null;
-
-    	    // Traverse the rest of the list starting from temp1
-    	    while (temp1 != null) {
-    	        // Check if the current node's empId matches the given id
-    	        if (temp1.data.getEmpid() == id) {
-    	            if (prev != null) {
-    	                // If there's a previous node, link it to the next node of temp1
-    	                prev.next = temp1.next;
-    	            }
-    	            // Remove the current node by disconnecting it
-    	            Node temp = temp1;
-    	            temp1 = temp1.next;   // Move to the next node in the list
-    	            temp.next = null;     // Disconnect temp from the list
-    	            temp = null;          // Allow garbage collection to clear the node
-    	        } else {
-    	            // If current node's empId doesn't match, just move forward
-    	            prev = temp1;         // Set prev to the current node
-    	            temp1 = temp1.next;   // Move to the next node in the list
-    	        }
-    	    }
+    	Node temp1=head;
+    	while(temp1!=null) {
+    	Node temp=head;
+    	if(head.data.getEmpid()==id) {
+    		head=temp.next;
+    		temp.next=null;
+    		temp=null;
+    	}
+    	else {
+    		Node prev=null;
+    		while(temp!=null && temp.data.getEmpid()!=id) {
+    			prev=temp;
+    			temp=temp.next;
+    			}
+    		if(temp!=null && temp.data.getEmpid()==id) {
+    			prev.next=temp.next;
+    			temp.next=null;
+    			temp=null;
+    		}
+    		else {
+    			System.out.println("Id Not found");
+    		}
+    	}
+    	temp1=temp1.next;
+    	
+    }
+    	 
+    	    
     }
     	public void searchById(int id) {
     		Node temp=head;;
