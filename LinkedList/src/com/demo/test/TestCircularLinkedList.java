@@ -11,6 +11,8 @@ public class TestCircularLinkedList {
         cll.addData(2);
         cll.addData(9);
         cll.displaydata();
+        cll.addByposition(23,7 );
+        cll.displaydata();
 	}
 
 }
