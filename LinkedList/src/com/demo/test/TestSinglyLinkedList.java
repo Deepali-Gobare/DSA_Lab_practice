@@ -1,6 +1,6 @@
 package com.demo.test;
 
-import com.demo.linkedList.SinglyLinkedList;
+import com.demo.linkedlist.SinglyLinkedList;
 
 public class TestSinglyLinkedList {
 	public static void main(String[] args) {
