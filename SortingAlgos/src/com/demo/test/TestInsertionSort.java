@@ -17,11 +17,11 @@ public class TestInsertionSort {
 	private static void insertionsort(int[] arr) {
 		int n=arr.length;
 		for(int i=1;i<n;i++) {
-			//place j at the end of sorted portion of the array
+			
 			int j=i-1;
 			int key=arr[i];
 			while(j>=0 && arr[j]>key) {
-				//shift values one location 0n the right side 
+				
 				arr[j+1]=arr[j];
 				j--;
 			}

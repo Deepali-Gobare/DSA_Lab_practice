@@ -16,13 +16,13 @@ public class TestMergeArray {
 				k++;
 			}
 		}
-		//copy remaining part of arr1 into arr3
+		
 		while(i<arr1.length) {
 			arr3[k]=arr1[i];
 			i++;
 			k++;
 		}
-		//copy remaining part of arr2 into arr3
+	
 		while(j<arr2.length) {
 			arr3[k]=arr2[j];
 			j++;

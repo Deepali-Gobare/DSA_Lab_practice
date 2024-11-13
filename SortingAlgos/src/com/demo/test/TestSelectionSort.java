@@ -14,18 +14,18 @@ public class TestSelectionSort {
 	}
 
 	private static void selectionsort(int[] arr) {
-	    //i gives the begining of unsorted part
+	    
 		for(int i=0;i<arr.length-1;i++)
 		{
 			int min_idx=i;
-			//find the index position of minimum number in unsorted part of array
+			
 			for(int j=i+1;j<arr.length;j++) {
 				if(arr[j]<arr[min_idx]) {
 					min_idx=j;
 				}
 				
 			}
-			//swap 2 elements
+			
 			int temp=arr[i];
 			arr[i]=arr[min_idx];
 			arr[min_idx]=temp;

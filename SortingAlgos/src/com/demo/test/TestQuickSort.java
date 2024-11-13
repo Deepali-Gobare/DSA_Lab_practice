@@ -19,7 +19,7 @@ public class TestQuickSort {
 		int pivot=first;
 		int i=first;
 		int j=last;
-		//minimum size od array should be 2
+		
 		if(first<last) {
 			while(i<j) {
 				while(arr[i]<=arr[pivot] && i<last) {
@@ -29,13 +29,13 @@ public class TestQuickSort {
 					j--;
 				}
 				if(i<j) {
-					//swap i and j
+					
 					int temp=arr[i];
 					arr[i]=arr[j];
 					arr[j]=temp;
 				}
 			}
-			//swap pivot with j
+		
 			int temp=arr[pivot];
 			arr[pivot]=arr[j];
 			arr[j]=temp;

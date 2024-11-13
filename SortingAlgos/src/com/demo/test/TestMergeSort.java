@@ -26,20 +26,20 @@ public class TestMergeSort {
 
 	private static void merge(int[] arr, int start, int mid, int end) {
 		int i,j,k;
-		//length of first array
+		
 		int n1=mid-start+1;   
-		//length of second array
+		
 		int n2=end-mid;
 		
 		int[] leftarray=new int[n1];
 		int[] rightarray=new int[n2];
 		i=0;
-		//copy of left portion of the array into left array
+		
 		for(int a=start;a<=mid;a++) {
 			leftarray[i]=arr[a];
 			i++;
 		}
-		//copy right portion of the array in to rightarray
+		
 		j=0;
 		for(int a=mid+1;a<=end;a++) {
 			rightarray[j]=arr[a];
@@ -47,7 +47,7 @@ public class TestMergeSort {
 		}
 		System.out.println("leftArray : "+Arrays.toString(leftarray));
 		System.out.println("rightArray : "+Arrays.toString(rightarray));
-		//merging leftarray and rightarray
+		
 		i=0;
 		j=0;
 		k=start;
